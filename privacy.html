@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Nevio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 48px 20px 80px;
+      background: #EFECFB;
+      color: #1C1C1E;
+      display: flex;
+      justify-content: center;
+    }
+    .page { width: 100%; max-width: 720px; }
+    .header { text-align: center; margin-bottom: 24px; }
+    .logo-badge {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      box-shadow: 0 8px 20px rgba(108, 92, 231, 0.15);
+    }
+    .logo-badge img { width: 40px; height: 40px; display: block; }
+    .wordmark { color: #6C5CE7; font-weight: 800; font-size: 20px; margin: 0 0 20px; }
+    .tabs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+    .tab { text-decoration: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; background: #EFECFB; color: #6C5CE7; }
+    .tab.active { background: #6C5CE7; color: #fff; }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 12px 32px rgba(108, 92, 231, 0.12);
+    }
+    h1 { font-size: 26px; font-weight: 800; margin: 0 0 4px; }
+    .updated { color: #8E8E93; font-size: 13px; margin: 0 0 28px; }
+    h2 { font-size: 17px; font-weight: 700; margin: 28px 0 10px; }
+    p, li { font-size: 15px; line-height: 1.65; color: #3a3a3c; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    a { color: #6C5CE7; }
+    .disclaimer-box {
+      background: #EFECFB;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: #1C1C1E;
+      margin: 20px 0;
+    }
+    .footer { text-align: center; color: #8E8E93; font-size: 12px; margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="logo-badge"><img src="logo.png" alt="Nevio" /></div>
+      <p class="wordmark">Nevio</p>
+      <div class="tabs">
+        <a class="tab active" href="privacy.html">Privacy Policy</a>
+        <a class="tab" href="terms.html">Terms of Use</a>
+        <a class="tab" href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: July 9, 2026</p>
+
+      <p>Nevio ("we", "us", "our") helps you visually track skin moles over time. This page explains what information we collect, why, and how you can control it.</p>
+
+      <h2>Information we collect</h2>
+      <ul>
+        <li><strong>Account information:</strong> name and email address. If you sign up with a password, we store only a securely hashed version of it — never the password itself. If you use Sign in with Apple, we store Apple's stable account identifier instead of a password.</li>
+        <li><strong>Mole photos:</strong> photos you take or upload of your skin, plus your own optional labels (e.g. "Left shoulder").</li>
+        <li><strong>Analysis results:</strong> the output of our automated visual assessment for each photo.</li>
+      </ul>
+      <p>We do not use third-party analytics or advertising trackers. We don't sell your data to anyone, ever.</p>
+
+      <h2>How your photos are used</h2>
+      <p>Each photo you upload is sent to OpenAI's API for automated visual analysis, and stored in a private cloud storage bucket (Cloudflare R2) that has no public URL — every access requires a short-lived, signed link generated on demand. Photos are never used to train our own models, and we don't share them with anyone besides the AI provider performing the analysis on our behalf.</p>
+
+      <div class="disclaimer-box">
+        Nevio's analysis is a visual awareness tool, not a medical diagnosis. See our <a href="terms.html">Terms of Use</a> for details.
+      </div>
+
+      <h2>Where your data lives</h2>
+      <p>Account and analysis data is stored in our own database, hosted on infrastructure we control. Photos are stored separately in Cloudflare R2. Data is transmitted over encrypted (HTTPS) connections.</p>
+
+      <h2>Notifications</h2>
+      <p>Mole recheck reminders are scheduled entirely on your device — we don't use a third-party push notification service, and no reminder data is sent to or stored on our servers.</p>
+
+      <h2>Your rights</h2>
+      <ul>
+        <li><strong>Access:</strong> everything you've stored with us is visible directly in the app.</li>
+        <li><strong>Deletion:</strong> you can permanently delete your account at any time from the app's Settings screen. This immediately and permanently erases your account, every photo, and all analysis history — this cannot be undone and we keep no backup copy afterward.</li>
+        <li><strong>Correction:</strong> you can update your name, password, or mole labels at any time in the app.</li>
+      </ul>
+
+      <h2>Children's privacy</h2>
+      <p>Nevio is not directed at children under 13, and we don't knowingly collect information from them.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If we make material changes, we'll update the date at the top of this page. Continued use of Nevio after a change means you accept the updated policy.</p>
+
+      <h2>Contact us</h2>
+      <p>Questions about this policy or your data? Email <a href="mailto:support@nevio.agency">support@nevio.agency</a>.</p>
+    </div>
+    <p class="footer">Nevio · <a href="mailto:support@nevio.agency">support@nevio.agency</a></p>
+  </div>
+</body>
+</html>
